@@ -42,3 +42,18 @@ button{
   font-size: 18px;
   cursor: pointer;
 }
+
+@media(max-width:716px){
+  h1{
+    font-size: 40px;
+  }
+  .primeiro{
+    font-size: 18px;
+  }
+}
+
+@media(max-width:436px){
+  h1{
+    font-size: 30px;
+  }
+}
