@@ -6,13 +6,11 @@ import Topo from './componentes/Topo';
 
 export default function App() {
   const [imgAnimal, setImagemAnimal] = useState("cachorro");
-  const alterarState = () => {
-    imgAnimal === "cachorro" ? setImagemAnimal("gato") : setImagemAnimal("cachorro")
-  };
+
   
   return (
     <div className="App centralizar">
-      <Topo passandoEstado={alterarState} />
+      <Topo tipoAnimal={imgAnimal} setState={setImagemAnimal} />
       <CardAnimal tipoAnimal={imgAnimal} />
       <CardInformacoes tipoAnimal={imgAnimal} />
     </div>
